@@ -114,7 +114,7 @@ export class App extends Component {
           <Route exact path="/shopping-cart/catalog">
             <ShopPage />
           </Route>
-          <Route exact path="/shopping-cart">
+          <Route exact path="/shopping-cart/">
             <HomePage />
           </Route>
         </Switch>

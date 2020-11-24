@@ -9,14 +9,14 @@ function Header(props) {
   const location = useLocation();
 
   useEffect(() => {
-    setTheme(location.pathname === "/shopping-cart" ? "light" : "dark");
+    setTheme(location.pathname === "/shopping-cart/" ? "light" : "dark");
   }, [location]);
 
   return (
     <header className={styles.container}>
       <Link
         className={theme === "light" ? styles.logo : styles.logoBlack}
-        to="/shopping-cart"
+        to="/shopping-cart/"
       >
         Core Components
       </Link>
