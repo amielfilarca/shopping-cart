@@ -90,7 +90,7 @@ export default function Cart({
                       <SlideUpButton
                         onClick={closeCart}
                         text="Checkout"
-                        path="/"
+                        path="/shopping-cart"
                       />
                     </>
                   )}
@@ -114,7 +114,7 @@ export default function Cart({
                   <SlideUpButton
                     onClick={closeCart}
                     text="Browse Products"
-                    path="/catalog"
+                    path="/shopping-cart/catalog"
                   />
                 </>
               )}

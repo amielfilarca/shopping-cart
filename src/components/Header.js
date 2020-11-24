@@ -16,14 +16,14 @@ function Header(props) {
     <header className={styles.container}>
       <Link
         className={theme === "light" ? styles.logo : styles.logoBlack}
-        to="/"
+        to="/shopping-cart"
       >
         Core Components
       </Link>
       <nav className={styles.nav}>
         <Link
           className={theme === "light" ? styles.shop : styles.shopBlack}
-          to="/catalog"
+          to="/shopping-cart/catalog"
         >
           Shop
         </Link>

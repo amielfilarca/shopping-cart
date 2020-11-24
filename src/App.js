@@ -102,19 +102,19 @@ export class App extends Component {
           closeCart={this.closeCart}
         />
         <Switch>
-          <Route exact path="/products/:productId">
+          <Route exact path="/shopping-cart/products/:productId">
             <ProductPage addToCart={this.addToCart} />
           </Route>
-          <Route exact path="/products">
+          <Route exact path="/shopping-cart/products">
             <ProductPage addToCart={this.addToCart} />
           </Route>
-          <Route exact path="/catalog/:categoryId">
+          <Route exact path="/shopping-cart/catalog/:categoryId">
             <ShopPage />
           </Route>
-          <Route exact path="/catalog">
+          <Route exact path="/shopping-cart/catalog">
             <ShopPage />
           </Route>
-          <Route exact path="/">
+          <Route exact path="/shopping-cart">
             <HomePage />
           </Route>
         </Switch>

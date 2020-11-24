@@ -36,11 +36,11 @@ const ShopPage = (props) => {
             <div className={styles.sideTitleShop}>Shop /</div>
             <h1 className={styles.sideTitle}>
               <Switch>
-                <Route exact path="/catalog">
+                <Route exact path="/shopping-cart/catalog">
                   <span>All</span>
                   Products
                 </Route>
-                <Route exact path="/catalog/:categoryId">
+                <Route exact path="/shopping-cart/catalog/:categoryId">
                   {category && category.name}
                 </Route>
               </Switch>
@@ -49,7 +49,7 @@ const ShopPage = (props) => {
           <ul className={styles.categories}>
             {categories.map((category) => (
               <Link
-                to={`/catalog/${category.id}`}
+                to={`/shopping-cart/catalog/${category.id}`}
                 className={styles.categoryLink}
                 key={category.id}
               >
@@ -61,12 +61,12 @@ const ShopPage = (props) => {
         <main className={styles.main}>
           <ul className={styles.productList}>
             <Switch>
-              <Route exact path="/catalog">
+              <Route exact path="/shopping-cart/catalog">
                 {allProducts &&
                   allProducts.map((product) => (
                     <li key={product.id} className={styles.product}>
                       <Link
-                        to={`/products/${product.id}`}
+                        to={`/shopping-cart/products/${product.id}`}
                         className={styles.productLink}
                       >
                         <div className={styles.productImage}>
@@ -89,12 +89,12 @@ const ShopPage = (props) => {
                     </li>
                   ))}
               </Route>
-              <Route exact path="/catalog/:categoryId">
+              <Route exact path="/shopping-cart/catalog/:categoryId">
                 {productsByCategory &&
                   productsByCategory.map((product) => (
                     <li key={product.id} className={styles.product}>
                       <Link
-                        to={`/products/${product.id}`}
+                        to={`/shopping-cart/products/${product.id}`}
                         className={styles.productLink}
                       >
                         <div className={styles.productImage}>

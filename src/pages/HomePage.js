@@ -15,7 +15,7 @@ const HomePage = (props) => {
           <p className={styles.s1Subtitle}>
             Now available for preorder, shipping December, 2020.
           </p>
-          <Link className={styles.s1Link} to="/catalog">
+          <Link className={styles.s1Link} to="/shopping-cart/catalog">
             Shop now
           </Link>
         </section>
