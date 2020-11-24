@@ -9,7 +9,7 @@ function Header(props) {
   const location = useLocation();
 
   useEffect(() => {
-    setTheme(location.pathname === "/" ? "light" : "dark");
+    setTheme(location.pathname === "/shopping-cart" ? "light" : "dark");
   }, [location]);
 
   return (
