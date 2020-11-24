@@ -7,7 +7,9 @@ A simple shopping cart application.
 
 ### Features
 - Clean user interface with smooth animations
-- Functional shopping cart
+- Add and remove products from the shopping cart
+- Filter products by categories
+- Responsive design
 
 ### Screenshots
 #### Home Page
