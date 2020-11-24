@@ -170,7 +170,7 @@
 }
 
 .addToBag div {
-  height: 0.9rem;
+  height: 1rem;
   overflow: hidden;
   position: relative;
 }
@@ -233,6 +233,7 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    width: 100%;
   }
 
   .productName {
@@ -241,10 +242,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    font-size: 64px;
+    font-size: 32px;
     font-family: "Montserrat SemiBold";
     font-weight: 600;
-    line-height: 64px;
+    line-height: 32px;
     pointer-events: none;
   }
 

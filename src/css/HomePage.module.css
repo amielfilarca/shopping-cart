@@ -64,3 +64,13 @@
   transition-delay: 0s;
   width: 100%;
 }
+
+@media (max-width: 780px) {
+  .s1Title {
+    font-size: 36px;
+  }
+  
+  .s1Subtitle {
+    font-size: 16px;
+  }
+}

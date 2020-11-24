@@ -137,3 +137,16 @@
   width: 29px;
   height: 29px;
 }
+
+@media (max-width: 780px) {
+  .container {
+    flex-direction: column;
+    height: 100px;
+    top: 5%;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
