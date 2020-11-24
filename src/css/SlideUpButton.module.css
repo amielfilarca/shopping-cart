@@ -1,0 +1,46 @@
+.link {
+  display: block;
+  text-decoration: none;
+  margin: 25px 0 50px;
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  border: 1px solid #b8b4b2;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  overflow: hidden;
+}
+
+.linkText {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #231f20;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.link:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #231f20;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  top: 75px;
+  left: 0;
+}
+
+.link:hover:before {
+  top: 0;
+}
+
+.link:hover .linkText {
+  color: var(--primary);
+}

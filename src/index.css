@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Montserrat Light";
+  src: url(./fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url(./fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat SemiBold";
+  src: url(./fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(./fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat ExtraBold";
+  src: url(./fonts/Montserrat/Montserrat-ExtraBold.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary: #f8f4f0;
+  --secondary: #1a1a1a;
+  --shopPrimary: #231f20;
+  --shopSecondary: #f8f5f2;
+  --productImage: #f2eeeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

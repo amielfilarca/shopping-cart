@@ -1,0 +1,106 @@
+.cartContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px 0 0;
+}
+
+.cartImage {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  background: #efeae5;
+}
+
+.cartDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 10px 0;
+}
+
+.cartName,
+.cartPrice {
+  font-size: 0.9rem;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+}
+
+.cartCategory,
+.cartName {
+  padding-left: 10px;
+}
+
+.cartCategory {
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.cartName {
+  margin: 15px 0 0;
+}
+
+.cartPrice {
+  padding: 6px 0;
+}
+
+.quantityController {
+  margin: 15px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.quantityControlButton {
+  width: 42px;
+  height: 42px;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.quantityDisplay {
+  width: 64px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border: 1px solid #e6dcd2;
+  background: none;
+  font-size: 0.9rem;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+}
+
+.quantityDisplay:focus {
+  outline: none;
+}
+
+.quantityDisplay::-webkit-outer-spin-button,
+.quantityDisplay::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantityDisplay[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 780px) {
+  .cartImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cartCategory {
+    font-size: 0.9rem;
+  }
+
+  .cartName,
+  .cartPrice {
+    font-size: 0.8rem;
+  }
+}

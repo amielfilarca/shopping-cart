@@ -1,0 +1,66 @@
+.container {
+  color: var(--primary);
+  background: var(--secondary);
+  cursor: default;
+}
+
+.s1 {
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+
+  padding: 160px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.s1Title {
+  font-size: 48px;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+}
+
+.s1Subtitle {
+  font-size: 24px;
+  margin: 18px 0;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.s1Link {
+  position: relative;
+  border: none;
+  background: white;
+  color: var(--secondary);
+  padding: 16px 40px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+}
+
+.s1Link:hover:before {
+  transform: translate3d(3px, 3px, 0);
+}
+
+.s1Link:before {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  content: " ";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: transform 0.2s;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  width: 100%;
+}

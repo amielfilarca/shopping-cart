@@ -1,0 +1,243 @@
+.container {
+  background: var(--shopSecondary);
+  min-height: 100vh;
+  cursor: default;
+  color: var(--shopPrimary);
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 27vh 0 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.side {
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 50px;
+}
+
+.sideTitleShop {
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.sideTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+  font-size: 32px;
+  padding: 5px 0 0;
+  line-height: 1em;
+}
+
+.sideTitle span {
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.categories {
+  width: 100%;
+  padding: 120px 0 0;
+}
+
+.category {
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+}
+
+.category:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  background: #e3dfdc;
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  bottom: 8px;
+  height: 10px;
+}
+
+.category:hover:after {
+  transform: scaleX(1);
+}
+
+.categoryLink {
+  color: var(--shopPrimary);
+  text-decoration: none;
+  width: 100%;
+}
+
+.main {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 25px 50px 0;
+  /* width: 350px; */
+  width: max(18.229vw, 300px);
+}
+
+.product:hover .frontImage {
+  transform: scale(1.05);
+  opacity: 0;
+}
+
+.product:hover .backImage {
+  transform: scale(1.05);
+  z-index: 0;
+  opacity: 1;
+}
+
+.productLink {
+  text-decoration: none;
+  color: var(--shopPrimary);
+}
+
+.productImage {
+  position: relative;
+  width: max(18.229vw, 300px);
+  height: max(18.229vw, 300px);
+  overflow: hidden;
+}
+
+.frontImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: max(18.229vw, 300px);
+  height: max(18.229vw, 300px);
+  object-fit: contain;
+  transform: scale(1);
+  background: var(--productImage);
+  transition: all 0.2s cubic-bezier(0.61, 1, 0.88, 1),
+    transform 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+  opacity: 1;
+}
+
+.backImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: max(18.229vw, 300px);
+  height: max(18.229vw, 300px);
+  object-fit: cover;
+  transform: scale(1);
+  background: var(--productImage);
+  transition: all 0.2s cubic-bezier(0.61, 1, 0.88, 1),
+    transform 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+  z-index: -1;
+  opacity: 0;
+}
+
+.productName {
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+  padding: 20px 0 0;
+  font-size: 1.3rem;
+}
+
+.productPrice {
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+  padding: 13.333px 0 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 780px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 200px 0 0;
+    width: 100%;
+  }
+
+  .side {
+    width: 80%;
+    margin: 0 auto;
+    min-height: fit-content;
+  }
+
+  .categories {
+    padding: 50px 0 50px;
+  }
+
+  .productList {
+    padding: 0 20px 0;
+    justify-content: center;
+  }
+
+  .product {
+    margin: 0 10px 25px;
+    width: max(40vw, 150px);
+  }
+
+  .productImage {
+    position: relative;
+    width: max(40vw, 150px);
+    height: max(40vw, 150px);
+    overflow: hidden;
+  }
+
+  .frontImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max(40vw, 150px);
+    height: max(40vw, 150px);
+    object-fit: contain;
+    transform: scale(1);
+    background: var(--productImage);
+    transition: all 0.2s cubic-bezier(0.61, 1, 0.88, 1),
+      transform 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+    opacity: 1;
+  }
+
+  .backImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max(40vw, 150px);
+    height: max(40vw, 150px);
+    object-fit: cover;
+    transform: scale(1);
+    background: var(--productImage);
+    transition: all 0.2s cubic-bezier(0.61, 1, 0.88, 1),
+      transform 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+    z-index: -1;
+    opacity: 0;
+  }
+}

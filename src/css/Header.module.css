@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  top: 12%;
+  left: 5%;
+  position: absolute;
+  z-index: 5;
+  cursor: default;
+}
+
+.logo,
+.shop,
+.btn,
+.cartLengthBlack {
+  color: var(--primary);
+}
+
+.logoBlack,
+.shopBlack,
+.btnBlack,
+.cartLength {
+  color: var(--shopPrimary);
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.logoBlack {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+}
+
+.shopBlack {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnBlack {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.svgSearch {
+  width: 26px;
+  height: 26px;
+}
+
+.cartBtnContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cartLength {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  left: calc(-100% - 7px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: var(--shopSecondary);
+  font-size: 0.9rem;
+  font-family: "Montserrat Bold";
+  font-weight: 700;
+}
+
+.cartLengthBlack {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  left: calc(-100% - 7px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: var(--shopPrimary);
+  font-size: 0.9rem;
+  font-family: "Montserrat Bold";
+  font-weight: 700;
+}
+
+.svgArrow {
+  position: absolute;
+  left: calc(100% - 2px);
+  color: var(--shopSecondary);
+}
+
+.svgArrowBlack {
+  position: absolute;
+  left: calc(100% - 2px);
+  color: var(--shopPrimary);
+}
+
+.svgCart {
+  width: 29px;
+  height: 29px;
+}
