@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.440a96b5.chunk.css",
+    "main.css": "/shopping-cart/static/css/main.68e6ed22.chunk.css",
     "main.js": "/shopping-cart/static/js/main.5c9e6156.chunk.js",
     "main.js.map": "/shopping-cart/static/js/main.5c9e6156.chunk.js.map",
     "runtime-main.js": "/shopping-cart/static/js/runtime-main.602bb2d4.js",
@@ -10,7 +10,7 @@
     "static/js/3.74b5f6fe.chunk.js": "/shopping-cart/static/js/3.74b5f6fe.chunk.js",
     "static/js/3.74b5f6fe.chunk.js.map": "/shopping-cart/static/js/3.74b5f6fe.chunk.js.map",
     "index.html": "/shopping-cart/index.html",
-    "static/css/main.440a96b5.chunk.css.map": "/shopping-cart/static/css/main.440a96b5.chunk.css.map",
+    "static/css/main.68e6ed22.chunk.css.map": "/shopping-cart/static/css/main.68e6ed22.chunk.css.map",
     "static/js/2.b843b4eb.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.b843b4eb.chunk.js.LICENSE.txt",
     "static/media/index.css": "/shopping-cart/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/asus-rog-strix-b450f-gaming-gallery-1.101c584e.png": "/shopping-cart/static/media/asus-rog-strix-b450f-gaming-gallery-1.101c584e.png",
@@ -118,7 +118,7 @@
   "entrypoints": [
     "static/js/runtime-main.602bb2d4.js",
     "static/js/2.b843b4eb.chunk.js",
-    "static/css/main.440a96b5.chunk.css",
+    "static/css/main.68e6ed22.chunk.css",
     "static/js/main.5c9e6156.chunk.js"
   ]
 }
